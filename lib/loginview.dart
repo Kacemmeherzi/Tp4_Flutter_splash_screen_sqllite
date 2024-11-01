@@ -17,7 +17,7 @@ class _LoginviewState extends State<Loginview> {
       appBar:  AppBar(title: const  Text("Log in"),backgroundColor:Colors.green,),
       body: Column(
         children: [
-           Center(child: Image.asset("assets/images/logo.png"),heightFactor: 50,),
+           Center(heightFactor: 50,child: Image.asset("assets/images/logo.png"),),
      const      Text("Welcome Back ",style: TextStyle(color: Colors.green,fontSize: 20),),
        const    Text("please sign in into your account  ",style: TextStyle(color: Colors.grey,fontSize: 10),),
 
@@ -26,7 +26,7 @@ class _LoginviewState extends State<Loginview> {
            child: Column(
             
             children: [
-            Padding(padding: EdgeInsets.all(20),child: 
+            Padding(padding: const EdgeInsets.all(20),child: 
 
              TextFormField(
                 controller: _emailController,
@@ -43,7 +43,7 @@ class _LoginviewState extends State<Loginview> {
                   return null;
                 },
               )),
-                          Padding(padding: EdgeInsets.all(20),child: 
+                          Padding(padding: const EdgeInsets.all(20),child: 
 
               TextFormField(
                 controller: _passwordController,
@@ -67,7 +67,7 @@ class _LoginviewState extends State<Loginview> {
                 onPressed: (){}, child: const  Text("Sign in ")) , TextButton(child:const Text("Dont had one ?")
             ,onPressed: (){
                     Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (context) => Loginview()));
+                          MaterialPageRoute(builder: (context) => const Loginview()));
             },)
            ],),
              
